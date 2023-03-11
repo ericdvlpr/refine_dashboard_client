@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "strict": true,
     "skipLibCheck": true,
@@ -14,11 +18,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "src",
+    "jsx": "preserve",
+    "baseUrl": "src", // Here... try with correct values and the issue should get fixed
     "paths": {
-      "*": ["./*"]
+      "*": ["./*"] // Here... try with correct values and the issue should get fixed
     }
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
